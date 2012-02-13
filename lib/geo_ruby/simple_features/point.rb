@@ -117,6 +117,7 @@ module GeoRuby
 
         dot = a * c + b * d
         len = c * c + d * d
+        return 0.0 if len == 0
         res = dot / len
 
         xx, yy = if res < 0
